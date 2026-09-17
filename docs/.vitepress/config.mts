@@ -5,6 +5,7 @@ export default defineConfig({
   description: '用行为设计让自律自然发生',
   lang: 'zh-CN',
   base: '/BeYourSelf-site/',
+  ignoreDeadLinks: ['/ideas/', '/ideas/index', '/ideas/principles', '/journal/'],
   themeConfig: {
     nav: [
       { text: '产品', link: '/' },
