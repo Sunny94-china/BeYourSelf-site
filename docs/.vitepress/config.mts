@@ -5,7 +5,6 @@ export default defineConfig({
   description: '用行为设计让自律自然发生',
   lang: 'zh-CN',
   base: '/BeYourSelf-site/',
-  ignoreDeadLinks: ['/journal/'],
   themeConfig: {
     nav: [
       { text: '产品', link: '/' },
@@ -22,7 +21,9 @@ export default defineConfig({
         { text: '设计原则', link: '/ideas/principles' }
       ],
       '/journal/': [
-        { text: '日志索引', link: '/journal/' }
+        { text: '日志索引', link: '/journal/' },
+        { text: '2026-09-17 产品说明站上线', link: '/journal/2026-09-17-site-launch' },
+        { text: '2026-09-17 方向说明', link: '/journal/2026-09-17-direction' }
       ]
     },
     socialLinks: [

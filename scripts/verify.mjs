@@ -8,6 +8,8 @@ const required = [
   'docs/ideas/index.md',
   'docs/ideas/principles.md',
   'docs/journal/index.md',
+  'docs/journal/2026-09-17-site-launch.md',
+  'docs/journal/2026-09-17-direction.md',
   'docs/about.md',
   'docs/.vitepress/config.mts',
   'docs/.vitepress/dist/index.html'
