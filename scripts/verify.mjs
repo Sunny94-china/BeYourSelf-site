@@ -12,7 +12,8 @@ const required = [
   'docs/journal/2026-09-17-direction.md',
   'docs/about.md',
   'docs/.vitepress/config.mts',
-  'docs/.vitepress/dist/index.html'
+  'docs/.vitepress/dist/index.html',
+  '.github/workflows/deploy.yml'
 ]
 
 const missing = required.filter((p) => !existsSync(resolve(root, p)))
