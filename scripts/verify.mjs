@@ -1,0 +1,21 @@
+import { existsSync } from 'node:fs'
+import { resolve } from 'node:path'
+
+const root = resolve(import.meta.dirname, '..')
+const required = [
+  'docs/index.md',
+  'docs/guide/index.md',
+  'docs/ideas/index.md',
+  'docs/ideas/principles.md',
+  'docs/journal/index.md',
+  'docs/about.md',
+  'docs/.vitepress/config.mts',
+  'docs/.vitepress/dist/index.html'
+]
+
+const missing = required.filter((p) => !existsSync(resolve(root, p)))
+if (missing.length) {
+  console.error('verify failed, missing:\n' + missing.map((m) => `  - ${m}`).join('\n'))
+  process.exit(1)
+}
+console.log('verify ok')
