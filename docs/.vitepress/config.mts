@@ -18,7 +18,7 @@ export default defineConfig({
       ],
       '/ideas/': [
         { text: '思想与设计', link: '/ideas/' },
-        { text: '自律科学：主流研究与结论', link: '/ideas/self-discipline-science' },
+        { text: '如何科学地实现自律', link: '/ideas/self-discipline-science' },
         { text: '设计原则', link: '/ideas/principles' }
       ],
       '/journal/': [
